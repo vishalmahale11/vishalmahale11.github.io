@@ -1,8 +1,15 @@
+* {
+  font-style: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +42,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
