@@ -70,8 +70,10 @@ a {
   /* background-color: pink; */
 }
 .heroImg {
-  width: 100%;
-  border-radius: 5px;
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 70%;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 1024px) {
   .rootCont {
@@ -97,5 +99,9 @@ a {
   .photoCont {
     padding-top: 30px;
     max-height: 50vh;
+  }
+  .heroImg{
+    margin-top: 80px;
+    margin-left: -10px;
   }
 }

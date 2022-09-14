@@ -77,7 +77,7 @@ a {
   .navlogo {
     height: 47px;
     width: 50px;
-    margin-left: 5%;
+    margin-left: -40%;
   }
   .nav:hover {
     border-bottom: none;

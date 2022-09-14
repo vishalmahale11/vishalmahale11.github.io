@@ -57,9 +57,9 @@
     text-align: center !important;
   }
   .profilePicCont {
-    padding: 30px;
+    padding: 10px;
   }
   .profilePic {
-    width: 60%;
+    width: 100%;
   }
 }
