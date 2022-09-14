@@ -28,7 +28,7 @@
 }
 .skillsContFront {
   display: grid;
-  grid-template-columns: repeat(6, 16.6%);
+  grid-template-columns: repeat(3, 33.3%);
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
@@ -93,6 +93,9 @@
 }
 .mongoIcon:hover {
   color: rgb(82, 167, 75);
+}
+.ExpressIcon:hover{
+  color: gray;
 }
 .gitIcon:hover {
   color: rgb(232, 78, 49);

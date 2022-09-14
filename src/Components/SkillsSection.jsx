@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/styles";
 import { SkillCard } from "./SkillCard";
 import styles from "./Styles/SkillsSection.module.css";
 import { GrReactjs } from "react-icons/gr";
-import { SiMongodb, SiNodedotjs, SiRedux } from "react-icons/si";
+import { SiExpress, SiMongodb, SiNodedotjs, SiRedux } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
 import { SiChakraui } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
@@ -10,6 +10,10 @@ import { SiCss3 } from "react-icons/si";
 import { SiNpm } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
+import { RiTeamFill } from "react-icons/ri";
+import { MdSyncProblem } from "react-icons/md";
+import { FcReading } from "react-icons/fc";
+import { GoDatabase } from "react-icons/go";
 import Fade from "react-reveal/Fade";
 
 export function SkillsSection() {
@@ -17,7 +21,7 @@ export function SkillsSection() {
     <div className={styles.rootCont} id="skills">
       <Fade bottom>
         <p>Skills</p>
-        <p>Front-end skills</p>
+        <p>Front-End skills</p>
         <div className={styles.skillsContFront}>
           <SkillCard
             skill="React"
@@ -41,11 +45,43 @@ export function SkillsSection() {
               />
             }
           />
+
+          <SkillCard
+            skill="Chakra Ui"
+            icon={
+              <SiChakraui className={`${styles.skillIcon} ${styles.muiIcon}`} />
+            }
+          />
+
+          <SkillCard
+            skill="Html5"
+            icon={
+              <SiHtml5 className={`${styles.skillIcon} ${styles.htmlIcon}`} />
+            }
+          />
+          <SkillCard
+            skill="CSS"
+            icon={
+              <SiCss3 className={`${styles.skillIcon} ${styles.cssIcon}`} />
+            }
+          />
+        </div>
+
+        <p>Back-End skills</p>
+        <div className={styles.skillsContBack}>
           <SkillCard
             skill="NodeJs"
             icon={
               <SiNodedotjs
                 className={`${styles.skillIcon} ${styles.nodeIcon}`}
+              />
+            }
+          />
+          <SkillCard
+            skill="Express"
+            icon={
+              <SiExpress
+                className={`${styles.skillIcon} ${styles.ExpressIcon}`}
               />
             }
           />
@@ -58,22 +94,11 @@ export function SkillsSection() {
             }
           />
           <SkillCard
-            skill="Chakra Ui"
+            skill="Data Structure"
             icon={
-              <SiChakraui className={`${styles.skillIcon} ${styles.muiIcon}`} />
-            }
-          />
-
-          <SkillCard
-            skill="Html"
-            icon={
-              <SiHtml5 className={`${styles.skillIcon} ${styles.htmlIcon}`} />
-            }
-          />
-          <SkillCard
-            skill="Css"
-            icon={
-              <SiCss3 className={`${styles.skillIcon} ${styles.cssIcon}`} />
+              <GoDatabase
+                className={`${styles.skillIcon} ${styles.mongoIcon}`}
+              />
             }
           />
         </div>
@@ -94,6 +119,29 @@ export function SkillsSection() {
             skill="Postman"
             icon={
               <SiPostman className={`${styles.skillIcon} ${styles.gitIcon}`} />
+            }
+          />
+        </div>
+        <p>Soft Skills</p>
+        <div className={styles.toolsDiv}>
+          <SkillCard
+            skill="Collaborative"
+            icon={
+              <RiTeamFill className={`${styles.skillIcon} ${styles.gitIcon}`} />
+            }
+          />
+          <SkillCard
+            skill="Problem solver"
+            icon={
+              <MdSyncProblem
+                className={`${styles.skillIcon} ${styles.gitIcon}`}
+              />
+            }
+          />
+          <SkillCard
+            skill="Creative"
+            icon={
+              <FcReading className={`${styles.skillIcon} ${styles.gitIcon}`} />
             }
           />
         </div>
