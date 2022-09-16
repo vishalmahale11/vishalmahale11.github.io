@@ -9,18 +9,6 @@ import { SiMongodb } from "react-icons/si";
 import Fade from "react-reveal/Fade";
 const projects = [
   {
-    name: "firstpost clone",
-    img: "/firstpost.png",
-    link: " https://willowy-swan-73608b.netlify.app/",
-    git: "https://github.com/Ashvary1996/firstPost",
-    about: "It is news website online portal app",
-    stacks: [
-      <SiJavascript className={styles.stackIcon} />,
-      <SiHtml5 className={styles.stackIcon} />,
-      <SiCss3 className={styles.stackIcon} />,
-    ],
-  },
-  {
     name: "KindMeal.com clone",
     img: "/KindMeal.png",
     link: "https://kindmealreact.netlify.app/",
@@ -37,35 +25,44 @@ const projects = [
     ],
   },
   {
-    name: "Nordstormrack",
-    img: "/Nordstormrack.png",
-    link: "https://delicate-trifle-c90c9b.netlify.app/",
-    git: "https://github.com/Surendrakumar878/masaiyoutofinalproject",
-    about: "This is the online shopping app",
+    name: "firstpost clone",
+    img: "/firstpost.png",
+    link: " https://willowy-swan-73608b.netlify.app/",
+    git: "https://github.com/Ashvary1996/firstPost",
+    about:
+      "Firstpost is an Indian online news and media website. The site is a part of the Network 18 media conglomerate owned by Reliance Industries, which also runs CNN-News18 and CNBC-TV18.",
     stacks: [
       <SiJavascript className={styles.stackIcon} />,
       <SiHtml5 className={styles.stackIcon} />,
       <SiCss3 className={styles.stackIcon} />,
     ],
   },
-
-  // {
-  //   name: "Contio",
-  //   img: "/contio.png",
-  //   link: "https://contio.netlify.app/",
-  //   git: "https://github.com/chandan1499/contio",
-  //   about:
-  //     "Contio is an online portal where anyone can ask there doubts and anyone can become a mentor to help their peers using a built-in chat app",
-
-  //   stacks: [
-  //     <SiReact className={styles.stackIcon} />,
-  //     <SiNodedotjs className={styles.stackIcon} />,
-  //     <SiExpress className={styles.stackIcon} />,
-  //     <SiMongodb className={styles.stackIcon} />,
-  //     <SiJavascript className={styles.stackIcon} />,
-  //     <SiCss3 className={styles.stackIcon} />,
-  //   ],
-  // },
+  {
+    name: "Nordstormrack",
+    img: "/Nordstormrack.png",
+    link: "https://delicate-trifle-c90c9b.netlify.app/",
+    git: "https://github.com/Surendrakumar878/masaiyoutofinalproject",
+    about:
+      "Nordstromrack is a online shopping portal app. It is a American based ecommerce platform where you can buy the daily usable products.",
+    stacks: [
+      <SiJavascript className={styles.stackIcon} />,
+      <SiHtml5 className={styles.stackIcon} />,
+      <SiCss3 className={styles.stackIcon} />,
+    ],
+  },
+  {
+    name: "YouTube",
+    img: "/Youtube.png",
+    link: "https://phenomenal-meerkat-b3e9d8.netlify.app/",
+    git: "https://github.com/vishalmahale11/You-tTube-Clone",
+    about:
+      "Youtube clone where you can search the videos. Also it shows the popular videos on the front page.",
+    stacks: [
+      <SiJavascript className={styles.stackIcon} />,
+      <SiHtml5 className={styles.stackIcon} />,
+      <SiCss3 className={styles.stackIcon} />,
+    ],
+  },
 ];
 export function ProjectsSection() {
   return (

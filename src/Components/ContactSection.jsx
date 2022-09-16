@@ -26,16 +26,16 @@ export function ContactSection() {
         (result) => {
           console.log(result.text);
           Swal.fire({
-            icon: "success",
-            title: "Message Sent Successfully",
+            icon: "error",
+            title: "Ooops, something went wrong",
+            // text: error.text,
           });
         },
         (error) => {
-          console.log(error.text);
+          console.log(error.text); 
           Swal.fire({
-            icon: "error",
-            title: "Ooops, something went wrong",
-            text: error.text,
+            icon: "success",
+            title: "Message Sent Successfully",
           });
         }
       );
