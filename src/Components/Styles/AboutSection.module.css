@@ -16,6 +16,7 @@
 .rootCont > p {
   font-size: 40px;
   font-weight: 400;
+  margin-top: 100px;
 }
 .mainCont {
   display: grid;
@@ -45,6 +46,36 @@
   background-color: rgb(194, 195, 201);
   border-radius: 10px;
 }
+
+.stat{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid gray.200;
+  height: auto;
+  width: auto;
+  display: flex;
+  gap:10px;
+  padding: 20px;
+}
+
+.stat>div{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: auto;
+  width: 30%;
+  padding: 3px;
+  background-image: linear-gradient(to right, #cc2b5e  ,  #753a88);
+  color: #fff;
+}
+.main :nth-child(1) {
+  font-size : large;
+  font-weight: bolder;
+}
+
+.main :nth-child(2) {
+  font-size : large;
+  font-weight: bolder;
+}
+
+
 @media only screen and (max-width: 1024px) {
   .rootCont {
     width: 90%;
@@ -63,3 +94,5 @@
     width: 100%;
   }
 }
+
+

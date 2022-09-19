@@ -33,7 +33,7 @@ export function ProjectCard({ name, img, git, link, stacks, about }) {
           <Fade bottom>
             <p>{about}</p>
           </Fade>
-        </div>
+        </div> 
       </div>
     </>
   )

@@ -15,6 +15,7 @@ import { MdSyncProblem } from "react-icons/md";
 import { FcReading } from "react-icons/fc";
 import { GoDatabase } from "react-icons/go";
 import Fade from "react-reveal/Fade";
+import GitHubCalendar from "react-github-calendar";
 
 export function SkillsSection() {
   return (
@@ -143,6 +144,38 @@ export function SkillsSection() {
             icon={
               <FcReading className={`${styles.skillIcon} ${styles.gitIcon}`} />
             }
+          />
+        </div>
+        <p style={{ fontSize: "40px", fontWeight: "400", color: "black" }}>
+          Statistics
+        </p>
+        <div className={styles.stat}>
+          <div className={styles.main}>
+            <p>1200+ hrs</p>
+            <p>Coding</p>
+          </div>
+          <div className={styles.main}>
+            <p>20+</p>
+            <p>Mini project</p>
+          </div>
+          <div className={styles.main}>
+            <p>500+</p>
+            <p>DSA Question</p>
+          </div>
+          <div className={styles.main}>
+            <p>100+ hrs</p>
+            <p>Soft Skills</p>
+          </div>
+        </div>
+        <div style={{ margin: "auto" }}>
+          <GitHubCalendar
+            style={{
+              border: "1px solid lightgray",
+              padding: "20px",
+              borderRadius: "3px",
+            }}
+            username="vishalmahale11"
+            year={new Date().getFullYear()}
           />
         </div>
       </Fade>

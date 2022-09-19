@@ -18,6 +18,7 @@
   font-size: 30px;
   font-weight: 400;
   color: rgb(8, 111, 143);
+  margin-top: 70px;
   /* margin: 10; */
 }
 .rootCont > p:nth-of-type(1) {
@@ -106,12 +107,44 @@
 .expIcon:hover {
   color: black;
 }
+
+
+.stat{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid gray.200;
+  height: auto;
+  width: auto;
+  display: flex;
+  gap:10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.stat>div{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: auto;
+  width: 30%;
+  padding: 3px;
+  background-image: linear-gradient(to right, #cc2b5e  ,  #753a88);
+  color: #fff;
+}
+.main :nth-child(1) {
+  font-size : large;
+  font-weight: bolder;
+}
+
+.main :nth-child(2) {
+  font-size : large;
+  font-weight: bolder;
+}
+
 @media only screen and (max-width: 1024px) {
   /* .rootCont {
     height: 140vh;
     padding-bottom: 5vh;
   } */
   .rootCont {
+    margin-top: 30px;
     width: 90%;
   }
   .skillsContFront {
@@ -119,3 +152,5 @@
     /* height: 120vh; */
   }
 }
+
+
