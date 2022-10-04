@@ -1,13 +1,32 @@
 import { ProjectCard } from "./ProjectCard";
 import styles from "./Styles/ProjectsSection.module.css";
-import { SiJavascript } from "react-icons/si";
+import { SiExpress, SiJavascript, SiReact } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { SiChakraui } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { DiNodejsSmall } from "react-icons/di";
 import Fade from "react-reveal/Fade";
 const projects = [
+  {
+    name: "Bitrix24.com Clone",
+    img: "/Bitrix.png",
+    link: "https://bitrix24clone.netlify.app/",
+    git: "https://github.com/Hashal890/gusty-cover-2254",
+    about:
+      "Bitrix24 is a client management solution that provides a platform for businesses to organize and track interactions with potential or existing clients and partners.",
+    stacks: [
+      <GrReactjs className={styles.stackIcon} />,
+      <SiJavascript className={styles.stackIcon} />,
+      <SiHtml5 className={styles.stackIcon} />,
+      <SiCss3 className={styles.stackIcon} />,
+      <SiChakraui className={styles.stackIcon} />,
+      <DiNodejsSmall className={styles.stackIcon} />,
+      <SiExpress className={styles.stackIcon} />,
+      <SiMongodb className={styles.stackIcon} />,
+    ],
+  },
   {
     name: "KindMeal.com clone",
     img: "/KindMeal.png",
