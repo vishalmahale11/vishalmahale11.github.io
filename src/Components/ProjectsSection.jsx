@@ -1,6 +1,6 @@
 import { ProjectCard } from "./ProjectCard";
 import styles from "./Styles/ProjectsSection.module.css";
-import { SiExpress, SiJavascript, SiReact } from "react-icons/si";
+import { SiExpress, SiJavascript } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";

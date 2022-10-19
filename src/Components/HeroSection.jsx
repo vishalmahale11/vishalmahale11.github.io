@@ -70,7 +70,7 @@ export function HeroSection() {
         </div>
 
         <div className={styles.photoCont}>
-          <img src="/Vishal_pic.png" alt="logo" className={styles.heroImg} />
+          <img src="/Vishal_pic_professional 2.jpg" alt="logo" className={styles.heroImg} />
         </div>
         <div className={styles.socialCont}>
           <a
