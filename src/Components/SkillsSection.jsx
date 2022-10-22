@@ -167,6 +167,20 @@ export function SkillsSection() {
             <p>Soft Skills</p>
           </div>
         </div>
+        <p style={{ fontSize: "40px", fontWeight: "400", color: "black" }}>
+          Github Statistics
+        </p>
+        <div className={styles.git}>
+          <img
+            src="https://github-readme-streak-stats.herokuapp.com/?user=vishalmahale11"
+            alt="Vishal Mahale"
+          />
+        </div>
+
+        <p style={{ fontSize: "40px", fontWeight: "400", color: "black" }}>
+          Github Calender
+        </p>
+
         <div style={{ margin: "auto" }}>
           <GitHubCalendar
             style={{
