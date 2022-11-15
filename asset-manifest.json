@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.9002d60f.css",
-    "main.js": "/static/js/main.cac83098.js",
+    "main.css": "/static/css/main.e56f3c2f.css",
+    "main.js": "/static/js/main.27e20e2d.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/Vishal_Mahale_Resume.pdf": "/static/media/Vishal_Mahale_Resume.960e0eedc409117bae87.pdf",
     "index.html": "/index.html",
-    "main.9002d60f.css.map": "/static/css/main.9002d60f.css.map",
-    "main.cac83098.js.map": "/static/js/main.cac83098.js.map",
+    "main.e56f3c2f.css.map": "/static/css/main.e56f3c2f.css.map",
+    "main.27e20e2d.js.map": "/static/js/main.27e20e2d.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9002d60f.css",
-    "static/js/main.cac83098.js"
+    "static/css/main.e56f3c2f.css",
+    "static/js/main.27e20e2d.js"
   ]
 }
