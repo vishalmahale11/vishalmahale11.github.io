@@ -5,6 +5,7 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 30px;
+    padding-top: 5rem;
 }
 
 .skillmain{
@@ -42,6 +43,10 @@
 
 
 @media only screen and (max-width: 1024px){
+
+    .skillsName{
+        padding-top: 6rem;
+    }
     
 .skillmain{
     display: grid;

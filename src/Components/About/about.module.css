@@ -6,6 +6,7 @@
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
+    padding-top: 5rem;
 }
 
 .aboutsection{
@@ -35,6 +36,7 @@
 @media only screen and (max-width: 1024px){
     .aboutName{
       margin-top: 150px;
+      padding-top: 6rem;
     }
     .aboutsection{
         display: flex;

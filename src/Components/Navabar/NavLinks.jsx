@@ -36,16 +36,40 @@ function NavLinks() {
   });
   return width > 768 ? (
     <Box display={"flex"} alignItems="center" gap={"24px"}>
-      <Link className={styles.navLink} to="about">
+      <Link
+        smooth={true}
+        duration={1000}
+        spy={true}
+        className={styles.navLink}
+        to="about"
+      >
         About
       </Link>
-      <Link className={styles.navLink} to="skills">
+      <Link
+        smooth={true}
+        duration={1000}
+        spy={true}
+        className={styles.navLink}
+        to="skills"
+      >
         Skills
       </Link>
-      <Link className={styles.navLink} to="projects">
+      <Link
+        smooth={true}
+        duration={1000}
+        spy={true}
+        className={styles.navLink}
+        to="projects"
+      >
         Projects
       </Link>
-      <Link className={styles.navLink} to="contact">
+      <Link
+        smooth={true}
+        duration={1000}
+        spy={true}
+        className={styles.navLink}
+        to="contact"
+      >
         Contact Me
       </Link>
       <a href={resume} target="_blank" download>
@@ -76,6 +100,9 @@ function NavLinks() {
             <Box textAlign={"center"}>
               <Box>
                 <Link
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
                   className={styles.drawer__link}
                   to="about"
                   onClick={() => {
@@ -87,6 +114,9 @@ function NavLinks() {
               </Box>
               <Box>
                 <Link
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
                   to="projects"
                   onClick={() => {
                     onClose();
@@ -99,6 +129,9 @@ function NavLinks() {
               </Box>
               <Box>
                 <Link
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
                   to="skills"
                   onClick={() => {
                     onClose();
@@ -110,6 +143,9 @@ function NavLinks() {
               </Box>
               <Box>
                 <Link
+                  smooth={true}
+                  duration={1000}
+                  spy={true}
                   to="contact"
                   onClick={() => {
                     onClose();
