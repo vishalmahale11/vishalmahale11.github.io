@@ -97,7 +97,7 @@ function NavLinks() {
           </DrawerHeader>
           <hr />
           <DrawerBody>
-            <Box textAlign={"center"}>
+            <Box>
               <Box>
                 <Link
                   smooth={true}
@@ -112,6 +112,7 @@ function NavLinks() {
                   <Heading>About</Heading>
                 </Link>
               </Box>
+              <hr />
               <Box>
                 <Link
                   smooth={true}
@@ -127,6 +128,7 @@ function NavLinks() {
                   <Heading>Projects</Heading>{" "}
                 </Link>
               </Box>
+              <hr />
               <Box>
                 <Link
                   smooth={true}
@@ -141,6 +143,7 @@ function NavLinks() {
                   <Heading>Skills</Heading>
                 </Link>
               </Box>
+              <hr />
               <Box>
                 <Link
                   smooth={true}
@@ -155,7 +158,8 @@ function NavLinks() {
                   <Heading>Contact</Heading>
                 </Link>
               </Box>
-              <Box>
+              <hr />
+              <Box mt={5} mb={2}>
                 <a href={resume} target="_blank" download>
                   <Button
                     onClick={() => window.open(resume)}
@@ -166,6 +170,7 @@ function NavLinks() {
                   </Button>
                 </a>
               </Box>
+              <hr />
             </Box>
           </DrawerBody>
         </DrawerContent>
