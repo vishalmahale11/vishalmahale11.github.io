@@ -1,5 +1,5 @@
-import { ProjectCard } from "./ProjectCard";
-import styles from "./Styles/ProjectsSection.module.css";
+import React from "react";
+import styles from "./project.module.css";
 import { SiExpress, SiJavascript } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
@@ -7,7 +7,8 @@ import { GrReactjs } from "react-icons/gr";
 import { SiChakraui } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { DiNodejsSmall } from "react-icons/di";
-import Fade from "react-reveal/Fade";
+import ProjectCard from "./ProjectCard";
+
 const projects = [
   {
     name: "Bitrix24.com Clone",
@@ -83,19 +84,20 @@ const projects = [
     ],
   },
 ];
-export function ProjectsSection() {
+
+const Project = () => {
   return (
-    <div className={styles.projectsSectionCont} id="projects">
-      <Fade bottom>
-        <p>Projects</p>
-      </Fade>
+    <div id="projects">
+      <div>
+        <p className={styles.projectName}>Projects</p>
+      </div>
       <div className={styles.projectGrid}>
         {projects.map((project) => (
-          <Fade bottom>
-            <ProjectCard {...project} />
-          </Fade>
+          <ProjectCard {...project} />
         ))}
       </div>
     </div>
   );
-}
+};
+
+export default Project;

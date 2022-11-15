@@ -1,0 +1,124 @@
+.rootCont {
+    display: grid;
+    grid-template-areas:
+      "nameCont photoCont"
+      "socialCont .";
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    background-color: gray.10;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nameCont {
+    grid-area: nameCont;
+    width: 100%;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(14, 36, 49);
+    max-height: 60vh;
+    margin-left: 50px;
+  }
+
+  .nameCont * {
+    margin: 10px 0px;
+  }
+  .nameCont p span {
+    color: #D55F8C;
+  }
+
+  .photoCont {
+    grid-area: photoCont;
+    width: 100%;
+    /* border: 2px solid black; */
+    max-height: 60vh;
+  }
+
+  .heroImg {
+    margin-left: 170px;
+    margin-top: 20px;
+    width: 55%;
+    border-radius: 50%;
+  }
+
+  .socialCont {
+    grid-area: socialCont;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .linkdin{
+    margin-top: -250px;
+    margin-left: 50px;
+  }
+
+  .github{
+    margin-top: -250px;
+  }
+
+  .linkdin:hover{
+    color: #0077b5;
+  }
+
+  .github:hover{
+    color: #6e5494;
+  }
+
+
+  @media only screen and (max-width: 1024px) {
+    .rootCont {
+      grid-template-areas:
+        "nameCont nameCont "
+        "socialCont photoCont";
+      width: 90%;
+      grid-template-columns: 20% 80%;
+      align-items: flex-start;
+      height: 100vh;
+      /* padding-top: 7vh; */
+    }
+    .socialCont {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-height: 150px;
+      width: 100%;
+      align-items: center;
+    }
+    .nameCont {
+      grid-area: nameCont;
+      width: 100%;
+      font-size: 50px;
+      font-weight: 800;
+      color: rgb(14, 36, 49);
+      max-height: 60vh;
+      margin-left: 20px;
+    }
+    .photoCont {
+      padding-top: 30px;
+      max-height: 50vh;
+    }
+    .heroImg{
+      margin-top: 100px;
+      margin-left: -20px;
+      width: 90%;
+    }
+    .linkdin{
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+    .github{
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }

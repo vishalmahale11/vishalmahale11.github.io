@@ -1,52 +1,17 @@
-import styles from "./Styles/ContactSection.module.css";
+import { Alert, AlertIcon, Button, FormControl } from "@chakra-ui/react";
+import React from "react";
+import { AiFillLinkedin, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
+import styles from "./contact.module.css";
 
-import { AiOutlineMail } from "react-icons/ai";
-import { AiOutlineGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { Form, Input, TextArea, Button } from "semantic-ui-react";
-import Swal from "sweetalert2";
+const Contact = () => {
+  const handleOnSubmit = () => {};
 
-import Fade from "react-reveal/Fade";
-export function ContactSection() {
-  const form = useRef();
-
-  const handleOnSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_o87nnal",
-        "template_ig7lakc",
-        e.target,
-        "v6XbrIZLnDEV-IVZ-"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          Swal.fire({
-            icon: "error",
-            title: "Ooops, something went wrong",
-            // text: error.text,
-          });
-        },
-        (error) => {
-          console.log(error.text); 
-          Swal.fire({
-            icon: "success",
-            title: "Message Sent Successfully",
-          });
-        }
-      );
-    e.target.reset();
-  };
   return (
-    <div className={styles.rootCont} id="contact">
-      <Fade bottom>
+    <>
+      <div className={styles.rootCont} id="contact">
         <p className={styles.contactHeading}>Contact Me</p>
         <div className="App">
-          <Form onSubmit={handleOnSubmit}>
+          <FormControl onSubmit={handleOnSubmit}>
             <input
               label="Email"
               className={styles.feedback_input}
@@ -63,16 +28,15 @@ export function ContactSection() {
             />
             <input
               className={styles.feedback_input}
-              control={TextArea}
               label="Message"
               name="message"
               placeholder="Message…"
               required
             />
-            <button type="submit" color="green">
+            <Button colorScheme="pink" type="submit">
               Send
-            </button>
-          </Form>
+            </Button>
+          </FormControl>
         </div>
         <hr style={{ width: "95vw" }} />
         <p className={styles.text}>Liked my work? Want to get in touch?</p>
@@ -98,7 +62,9 @@ export function ContactSection() {
         </div>
         <p className={styles.text}>Phone: +91 7083102944</p>{" "}
         <p className={styles.text}>Email: vishalmahale974@gmail.com</p>
-      </Fade>
-    </div>
+      </div>
+    </>
   );
-}
+};
+
+export default Contact;
