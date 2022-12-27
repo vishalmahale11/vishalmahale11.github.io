@@ -7,10 +7,20 @@ const Statistics = () => {
     <div>
       <p className={styles.stat}>Statistics</p>
       <div className={styles.contribution}>
-        <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=vishalmahale11"
-          alt="Vishal Mahale"
-        />
+        <div>
+          <img
+            className={styles.img}
+            src="https://github-readme-streak-stats.herokuapp.com/?user=vishalmahale11"
+            alt="Vishal Mahale"
+          />
+        </div>
+        <div>
+          <img
+            className={styles.img}
+            src="https://github-readme-stats.vercel.app/api?username=vishalmahale11"
+            alt="Vishal Mahale"
+          />
+        </div>
       </div>
       <div className={styles.github}>
         <GitHubCalendar

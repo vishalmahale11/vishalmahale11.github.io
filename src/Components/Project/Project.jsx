@@ -13,7 +13,7 @@ const projects = [
   {
     name: "Bitrix24.com Clone",
     img: "/Bitrix.png",
-    link: "https://bitrix24clone.netlify.app/",
+    link: "https://bitrix24byreact.netlify.app/",
     git: "https://github.com/Hashal890/gusty-cover-2254",
     about:
       "Bitrix24 is a client management solution that provides a platform for businesses to organize and track interactions with potential or existing clients and partners.",

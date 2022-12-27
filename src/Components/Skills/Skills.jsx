@@ -108,7 +108,7 @@ const Skills = () => {
             src="https://debobrota-haldar.netlify.app/static/media/bootstrap.3b8c7115a9384838c588eb5514005c8c.svg"
             alt="BootStrap"
           />
-          <p className={styles.techname}>Chakra UI</p>
+          <p className={styles.techname}>Bootstrap</p>
         </div>
       </div>
       <p className={styles.toolsName}>Tools</p>

@@ -12,10 +12,14 @@
 }
 
 .contribution{
-    width: 40%;
+    width: 60%;
     margin: auto;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
 }
+
 
 @media only screen and (max-width: 1024px){
     .github{
@@ -25,8 +29,10 @@
     }
 
     .contribution{
-        width: 95%;
+        width: 80%;
         margin: auto;
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
     }
 }
