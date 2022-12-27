@@ -31,7 +31,7 @@ const projects = [
   {
     name: "KindMeal.com clone",
     img: "/KindMeal.png",
-    link: "https://kindmealreact.netlify.app/",
+    link: "https://kindmealmybyreact.netlify.app/",
     git: "https://github.com/vishalmahale11/pink-purpose-5182/tree/master/kindmeal.my",
     about:
       "Malaysia's No.1 meat-free lifestyle platform. Grab free coupons for exciting meal deals, discover delicious food and share delightful moments with food ...",
@@ -58,7 +58,7 @@ const projects = [
     ],
   },
   {
-    name: "Nordstormrack",
+    name: "Nordstormrack clone",
     img: "/Nordstormrack.png",
     link: "https://delicate-trifle-c90c9b.netlify.app/",
     git: "https://github.com/Surendrakumar878/masaiyoutofinalproject",
